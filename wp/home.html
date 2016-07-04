@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>home</title>
+	<link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+	<script type="text/javascript" src="lib/jquery-1.9.0.min.js"></script>
+	<link rel="stylesheet" href="source/jquery.fancybox.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="source/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function() {
+	$("#navMenu ul li").hover(function() {
+		$(this).find("ul").stop().slideToggle(400);
+	});
+});
+	</script>
+<link media="screen" rel="stylesheet" target="_blank" href="hi/css/colorbox.css" />
+        <script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js" type="text/javascript"></script>
+        <link media="screen" rel="stylesheet" target="_blank" href="hi/css/popup.css" />
+        <script language="javascript" src="hi/js/colorbox.js"></script>
+<script type="text/javascript">
+$("document").ready(function (){
+
+// load the overlay
+
+if (document.cookie.indexOf('visited=true') == -1) {
+var fifteenDays = 1000*60*60*24*15;
+var expires = new Date((new Date()).valueOf() + fifteenDays);
+document.cookie = "visited=true;expires=" + expires.toUTCString();
+$.colorbox({width:"580px", inline:true, href:"#subscribe_popup"});
+}
+$(".open_popup").colorbox({width:"580px", inline:true, href:"#subscribe_popup"});
+
+});
+
+</script>
+
+	<style>
+    #bgvid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:-1000
+}
+@media (min-aspect-ratio: 16/9) {
+  #bgvid {
+    width: 100%;
+    height: auto; /* actually taller than viewport */
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  #bgvid {
+    width: auto; /* actually wider than viewport */
+    height: 100%;
+  }
+}
+body {
+ padding-top: 80px; 
+ background: transparent;
+ font-size: 14px;
+ font-family: Arial, Helvetica, sans-serif;
+ overflow-x: auto;
+ overflow-y: scroll;
+}
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+	    color: #3B3A3A;
+}
+#bar{
+height:80px;
+}
+.glyphicon.glyphicon-menu-down{
+ font-size:50px;
+ color:white;
+ position:absolute;
+ top: 70%;
+ left: 50%;
+ margin-top:-16px;
+ margin-left:-16px;
+ }
+ #content{
+ background:white;
+ margin-top:1000px;
+ width:100%;
+ }
+ .motto{
+ height:190px;
+ width:270px;
+ }
+ .well{
+  height:250px;
+ width:270px;
+ }
+ .blue{
+ color:#3D9BE9;
+ font-size:40px;
+ align:center;
+ 
+ }
+ table{
+ margin-left:200px;
+ margin-right:200px;
+ }
+td{
+padding-left:80px;
+padding-top:50px;
+padding-bottom:50px;
+padding-right:80px;
+}
+* {
+  border-radius: 0 !important;
+}
+h1{
+text-align: center;
+    display: block;
+	font: normal normal normal 55px/1.4em avenir-lt-w01_85-heavy1475544,sans-serif;
+}
+.work{
+heigth:400px;
+width:400px;
+}
+table.recent{
+margin-left:100px;
+margin-right:100px;
+}
+#navMenu ul {margin:0;padding:0;list-style:none;background:#252525;text-align:center;position:relative;}
+#navMenu ul li a:hover{background:#3d9be9;color:#781705;}
+#navMenu ul li{display:inline-block;}
+#navMenu ul ul{position:absolute;width:200px;display:none;}
+#navMenu ul li ul li a{display:block;height:45px;width:200px;color:#fff;font-family:helvetica;line-height:43px;text-decoration:none;font-size:13px;transition: background 0.5s linear 0s, color 0.5s linear 0s}
+a:visited{
+  color:white;
+}
+</style>
+</head>
+<body>
+	<div class="background-wrap">
+     <video id="bgvid" preload="auto" autoplay="true" loop="loop">
+     	<source src="file.mp4" type="video/mp4" />
+
+     </video>
+ </div>
+ <div class="navbar navbar-default navbar-fixed-top navbar-inverse" id="navMenu">
+ <div class="container">
+<div class="navbar-header">
+                    
+                    <a class="navbar-brand" href="home.html"><img src = "logo.png" height="100" width="250"/></a>
+                </div>
+				<div class="collpase navbar-collapse  navbar-right" id="menu">
+					<ul class="nav navbar-nav" id="bar">
+                                         
+					<li></li><br />
+						<li><a href="home.html">HOME&nbsp;&nbsp;&nbsp;</a></li>
+						<li><a href="about.html">ABOUT US&nbsp;&nbsp;&nbsp;</a></li>
+						<li><a href="">PRODUCTS&nbsp;&nbsp;&nbsp;</a>
+						<ul>
+					    <li><a href="Pre-EngineeredBuildings.html">Pre-Engineered Buildings</a></li>
+					    <li><a href="Steel-Fabrication-Services.html">Steel Fabrication Services</a></li>
+					    <li><a href="frame.html">Primary Framing Systems</a></li>
+					    <li><a href="secframe.html">Secondary Framing Systems</a></li>
+						<li><a href="roof.html">Roof and Wall Panels Sheeting</a></li>
+						<li><a href="structure.html">Heavy Structural Fabrication</a></li>
+				        </ul>
+						</li>
+						<li><a href="gal.html">GALLARY&nbsp;&nbsp;&nbsp;</a></li>
+						<li><a href="contact.php">CONTACT</a></li>
+                                                <li><a href="#" class="open_popup">SUBSCRIBE</a>
+<!-- This contains the hidden content for inline calls for the subscribe box -->
+<div style='display:none'>
+<div id='subscribe_popup' style='padding:10px;'>
+<h2 class="box-title">Never miss an update from Agile</h2>
+<h3 class="box-tagline">Get notified about the latest works.</h3>
+<!-- BEGIN #subs-container -->
+<div id="subs-container" class="clearfix">
+<!-- BEGIN .box-side -->
+<div class="box-icon"><img src="hi/images/email.png"/></div>
+<center><h4>Subscribe by Email</h4>
+<h5>Get alerts directly into your inbox after each post and stay updated.</h5>
+<form action="news.php" method="post">
+<input type="text" name="name" placeholder="name" size="30"/><br /><br />
+<input type="text" name="email" placeholder="email" size="30" /><br /><br />
+<input type="submit" class="sub" value ="Subscribe"/>
+<form><center>
+<!-- END .box-side -->
+</div>
+</div>
+<!-- BEGIN #subs-container -->
+</div>
+</div>
+</div>
+<!-- END subscribe popup-->
+
+</li>
+					</ul>
+				</div>
+
+			</div>
+ </div>
+ <a href="#content"><span class="glyphicon glyphicon-menu-down "></span></a>
+ <div class="container" id="content"><br/><br/>
+ <table><tr><td>
+		<img class="motto" src="innovation.jpg" alt="img not found" /><div class="well"><p><h3><span class="blue">I</span>NNOVATION</h3>Our team of designers, engineers and research associates continuously innovate to bring our customers best solutions that are very attractive.</p></div></td>
+		<td><img class="motto" src="fabrication.jpg" alt="img not found" /><div class="well"><p><h3><span class="blue">F</span>ABRICATION</h3>Our team can execute any type of fabrication work including heavy steel. Our primary principle is to deliver on-time, within budget and full scope of the project.</p></div></td></tr>
+		<tr><td><img class="motto" src="jobwork.jpeg" alt="img not found" /><div class="well"><p><h3><span class="blue">J</span>OB WORK</h3>We partner with clients to manufacture PEB, Primary & Secondary frames, & Steel Structures. We do not consider any project too small or too big.</p></div></td>
+		<td><img class="motto" src="facility.jpg" alt="img not found" /><div class="well"><p><h3><span class="blue">F</span>ACILITY</h3>Factory is located in Andhra Pradesh on a 4 acre property with a production capacity of 25,000 metric tons per annum. It is equipped with a number of heavy machinery and tools</p></div></td></tr>
+ </table>
+ <h1><span style="color:#3D9BE9;">RECENT WORKS</span></h1>
+ <table class="recent"><tr><td>
+		<a class="fancybox" data-fancybox-group="gallery-1" href="1.jpg" title="Huge Factory with Mezzanine Floor" data-caption="Huge factory with high powered ventilation and natural light"><img class="work" src="1.jpg" alt="img not found" /></a></td>
+		<td><a class="fancybox" href="2.jpg" data-fancybox-group="gallery-1" title="Large Warehouse with multiple Loading Docks" data-caption="Large span warehouse with skylight and multiple metalic doors"><img class="work" src="2.jpg" alt="img not found" /></a></td></tr>
+		<tr><td><a class="fancybox" href="3.jpg" data-fancybox-group="gallery-1" title="Aesthetic Building with curvature" data-caption="Curves provides aesthetic appeal to this building in addition to better air and rain-water flow"><img class="work" src="3.jpg" alt="img not found" /></a></td>
+		<td><a class="fancybox" href="4.jpg" data-fancybox-group="gallery-1" title="Factory with different heights for housing machinery"data-caption="Factory with housing for a very tall machinery at the front and slanted roof and curved roofing"><img class="work" src="4.jpg" alt="img not found" /></a></td></tr>
+ </table>
+ <h1><span style="color:#3D9BE9;">CONTACT US</span></h1>
+  <center><script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:270px;width:1000px;'><div id='gmap_canvas' style='height:400px;width:800px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google map							</a></small></div><div><small><a href="http://freedirectorysubmissionsites.com/">reedirectorysubmissionsites.com</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(13.0382967,77.61212820000003),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(13.0382967,77.61212820000003)});infowindow = new google.maps.InfoWindow({content:'<strong>AGILE PRE-ENGINEERED BUILDINGS AND STRUCTURE</strong><br>No. 304, Multi Pearl, Veerannapalya Bangalore 560045<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script></center>
+<br /><br /><br />
+  <footer style="background:rgb(61, 155, 233); color:white;">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				<div class="widget">
+					<h5 class="widgetheading">Get in touch with us</h5>
+		    <address>
+					<strong>Agile P.E.B. & Structures</strong><br>
+					 Plot No. 64, VGP Selva Nagar Extn.,<br>
+					 Velachery, Chennai 600042<br /><br />
+                    No. 304, Multi Pearl, Veerannapalya<br />
+                    Bangalore 560045<br /><br />
+                    </address>
+<!--
+					<p>
+						<i class="icon-phone"></i> ,  <br>
+						<i class="icon-envelope-alt"></i> info@agilepeb.com
+					</p>
+-->
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="widget">
+                		<h5 class="widgetheading">Call Us</h5>
+						<ul class="link-list">
+						<li>90942 75488</li>
+						<li>94902 42222</li>
+                        </ul>
+                        
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="widget">
+					<h5 class="widgetheading">Latest posts</h5>
+	  <ul class="link-list">
+						<li><a href="#">Advantages of P.E.B over Concrete Buildings.</a></li>
+						<li><a href="#">Process for Pre-Engineered Buildings</a></li>
+						<li><a href="#">Capacity Planning </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="copyright">
+						<p>
+							<span>&copy; 2015 Agile P.E.B. &amp; Structures. All rights reserved.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</footer>
+ </div>
+<script type="text/javascript">
+$(document).ready(function() {
+ $('.fancybox').fancybox({
+  beforeShow : function(){
+   this.title =  this.title + " - " + $(this.element).data("caption");
+  }
+ });
+}); 
+</script>	
+
+</body>
+</html>

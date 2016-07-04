@@ -1,0 +1,19 @@
+<div class="row">
+<div class="col-lg-3">
+<div class="form-group">
+<input type="text" class="form-control" placeholder="*username" size="40" id="uname">
+</div></div>
+<div class="col-lg-3">
+<div class="form-group">
+<input type="email" class="form-control" id="email" placeholder="*enter email">
+ </div></div>
+<div class="col-lg-3">
+<div class="form-group">
+<input type="text" class="form-control" placeholder="enter your subject" size="40">
+</div></div></div>
+<div class="row">
+<div class="form-group">
+<textarea class="form-control" rows="10" style="width: 890" id="query" placeholder="*enter your query here"></textarea>
+</div>
+</div>
+<input type="submit" class="btn btn-info btn-md" value="Submit" onsubmit="validateform();"> 
